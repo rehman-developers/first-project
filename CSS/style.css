@@ -1,0 +1,223 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+#navbar {
+    display: flex;
+    position: relative;
+    align-items: center;
+    top: 0px;
+}
+
+#navbar::before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: .7;
+}
+
+#logo {
+    margin: 10px 30px;
+}
+
+#logo img {
+    height: 50px;
+    margin: 3px 5px;
+}
+
+ul {
+    display: flex;
+}
+
+li {
+    list-style: none;
+    font-size: 1.2rem;
+    font-family: 'Chakra Petch', sans-serif;
+
+}
+
+li a {
+    color: white;
+    padding: 25px 30px;
+    /* padding-bottom: 8px; */
+    display: block;
+    text-decoration: none;
+}
+
+li a:hover {
+    color: black;
+    background-color: white;
+    border-radius: 100px;
+}
+
+/* section home */
+#home {
+    display: flex;
+    top: 0px;
+    left: 0px;
+    flex-direction: column;
+    height: 490px;
+    padding: 3px 200px;
+    justify-content: center;
+    align-items: center;
+}
+
+#home::before {
+    content: "";
+    background-image: url('../bg\ foof.jpg');
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: .89;
+}
+
+#home h1 {
+    color: white;
+    text-align: center;
+    font-family: 'Chakra Petch', sans-serif;
+}
+
+#home p {
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Chakra Petch', sans-serif;
+}
+
+/* utility classes */
+.h-primary {
+    font-size: 3rem;
+    padding: 15px;
+    font-family: 'Chakra Petch', sans-serif;
+
+}
+
+.h-secondary {
+    font-size: 2.5rem;
+    padding: 12px;
+    font-family: 'Chakra Petch', sans-serif;
+
+}
+
+.btn {
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: brown;
+    color: white;
+    font-size: 1rem;
+    border-radius: 20px;
+    margin: 15px 10px;
+    cursor: wait;
+}
+
+/* services section */
+.services-container h1 {
+    text-align: center;
+    /* justify-content: center; */
+}
+
+#services {
+    margin: 30px;
+    display: flex;
+
+}
+
+#services .box {
+    border: 2px solid brown;
+    border-radius: 30px;
+    margin: 3px 6px;
+    padding: 35px;
+    text-align: center;
+    margin-bottom: 15px;
+    background-color: lightgray;
+}
+
+#services .box img {
+    height: 150px;
+    margin: auto;
+    display: block;
+}
+
+#services .box p {
+    font-size: 15px;
+    font-family: 'Chakra Petch', sans-serif;
+}
+
+/* Clients Section */
+#client-section h1 {
+    
+    text-align: center;
+    justify-content: center;
+  
+}
+#client-section::before{
+    content: "";
+    position: absolute;
+    background-image: url('../abstract-1238657.jpg');
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: .9;
+}
+
+#client {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.client-item{
+    padding: 34px;
+}
+
+#client img {
+     height: 150px;
+}
+/* CONTACT SECTION */
+#contact{
+    position: relative;
+    justify-content: center;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    background-image: url('../contact.jpg');
+}
+#contact-box{
+display: flex;
+justify-content: center;
+align-items: center;
+padding-bottom: 34px;
+}
+#contact h1{
+    text-align: center;
+}
+#contact-box textarea{
+    width:100% ;
+    padding: 0.5rem;
+    border-radius: 10px;
+}
+#contact-box form{
+    width: 40%;
+}
+#contact-box label{
+    font-size: 1.3rem;
+    font-family: 'Chakra Petch', sans-serif;
+
+}
+footer{
+    text-align: center;
+    background-color: brown;
+    color: white;
+}
